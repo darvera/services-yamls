@@ -1,9 +1,0 @@
-spring:
-  data:
-    mongodb:
-      authentication-database: admin
-      username: user
-      password: pass
-      database: dbclient
-      port: 3333
-      host: localhost
