@@ -18,8 +18,8 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: serviceclient
-          uri: lb://serviceclient
+      routes:                  # para investigar
+        - id: serviceclient      # para investiga r
+          uri: lb://serviceclient  # para investigar
           predicates:
             - Path=/client/**
