@@ -42,5 +42,5 @@ ribbon:
 
 apiservice:
   ribbon:
-    listOfServers: localhost:34617 # agregar mas server
+    listOfServers: localhost:34617  # agregar mas server
 
