@@ -23,3 +23,24 @@ spring:
           uri: lb://serviceclient  # para investigar
           predicates:
             - Path=/client/**
+
+# ############################33
+# spring:
+#   application:
+#     name: gateway
+#   cloud:
+#     gateway:
+#       routes:
+#         - id: apiRouting
+#           uri: lb://apiservice
+#           predicates:
+#             - Path=/**
+
+ribbon:
+  eureka:
+    enabled: false
+
+apiservice:
+  ribbon:
+    listOfServers: localhost:45547 # agregar mas server
+
