@@ -1,6 +1,5 @@
 server:
-  # port: 8084 se cambia a dinamico por el uso api gateway
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 8084
   
 spring:
   data:
@@ -20,5 +19,17 @@ eureka:
     service-url:
       default-zone: http://localhost:8761/eureka
     instance:
-      #hostname: localhost
-      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}} ## line new add
+      hostname: localhost
+
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: serviceclient
+          uri: lb://serviceclient
+          predicates:
+            - Path=/client/**
