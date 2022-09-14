@@ -1,16 +1,6 @@
 server:
-  port: 8084
+  port: 8080
   
-spring:
-  data:
-    mongodb:
-      authentication-database: admin
-      username: user
-      password: pass
-      database: dbclient
-      port: 27017
-      host: localhost
-
       
 eureka:
   client:
