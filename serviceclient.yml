@@ -11,6 +11,7 @@ spring:
       port: 27017
       host: localhost
 
+      
 eureka:
   client:
     fetch-registry: true
