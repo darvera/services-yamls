@@ -36,11 +36,11 @@ spring:
 #           predicates:
 #             - Path=/**
 
-# ribbon:
-#   eureka:
-#     enabled: false
+ribbon:
+  eureka:
+    enabled: false
 
-# apiservice:
-#   ribbon:
-#     listOfServers: localhost:34617  # agregar mas server
+apiservice:
+  ribbon:
+    listOfServers: localhost:34617  # agregar mas server
 
