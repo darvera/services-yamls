@@ -23,6 +23,10 @@ spring:
           uri: lb://serviceclient  # para investigar
           predicates:
             - Path=/client/**
+        - id: servicetransac
+          uri: lb://servicetransac
+          predicate:
+            - Path=/product/**
 
 # ############################33
 # spring:
