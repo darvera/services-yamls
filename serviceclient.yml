@@ -11,6 +11,11 @@ spring:
       database: dbclient
       port: 27017
       host: localhost
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
 
       
 eureka:
@@ -22,3 +27,5 @@ eureka:
     instance:
       #hostname: localhost
       instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}} ## line new add
+
+ 
